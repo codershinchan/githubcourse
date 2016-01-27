@@ -1,0 +1,60 @@
+In C++, it is a compiler error to call a function before it is declared.
+In C++, it is compiler error to make a normal pointer to point a const variable
+In C, a void pointer can directly be assigned to some other pointer like int *, char *. But in C++, a void pointer must be explicitly typcasted.
+Const variable in C++ must be initialized but in c it isn’t necessary.
+C++ supports function overloading, i.e., there can be more than one functions with same name and differences in parameters. How does C++ compiler distinguishes between different functions when it generates object code – it changes names by adding information about arguments. This technique of adding additional information to function names is called Name Mangling. 
+Function overloading is a feature in C++ where two or more functions can have the same name but different parameters.
+In C++, following function declarations cannot be overloaded.
+	Function declarations that differ only in the return type	
+	Member function declarations with the same name and the name parameter-type-list cannot be overloaded if any of them is a static member function declaration.
+	Parameter declarations that differ only in a pointer * versus an array [] are equivalent. 
+	Parameter declarations that differ only in the presence or absence of const and/or volatile are equivalent. 
+	Two parameter declarations that differ only in their default arguments are equivalent. 
+Overloading doesn’t work for derived class in C++ programming language. There is no overload resolution between Base and Derived
+So in Java overloading works across scopes contrary to C++. Java compiler determines correct version of the overloaded method to be executed at compile time based upon the type of argument used to call the method and parameters of the overloaded methods of both these classes receive the values of arguments used in call and executes the overloaded method.
+Once default value is used for an argument, all subsequent arguments must have default value.
+C++ provides an inline functions to reduce the function call overhead. Inline function is a function that is expanded in line when it is called. When the inline function is called whole code of the inline function gets inserted or substituted at the point of inline function call.
+new calls constructors, while malloc() does not.
+new is an operator, while malloc() is a fucntion.
+new returns exact data type, while malloc() returns void *.
+Objects are basic run-time entities in an object oriented system, objects are instances of a class these are defined user defined data types.
+
+Encapsulation and Data abstraction: Wrapping up(combing) of data and functions into a single unit is known as encapsulation. The data is not accessible to the outside world and only those functions which are wrapping in the class can access it. This insulation of the data from direct access by the program is called data hiding or information hiding.
+
+Data abstraction refers to, providing only needed information to the outside world and hiding implementation details. For example, consider a class Complex with public functions as getReal() and getImag(). We may implement the class as an array of size 2 or as two variables. The advantage of abstractions is, we can change implementation at any point, users of Complex class wont’t be affected as out method interface remains same. Had our implementation be public, we would not have been able to change it.
+
+Inheritance: inheritance is the process by which objects of one class acquire the properties of objects of another class. It supports the concept of hierarchical classification. Inheritance provides re usability. This means that we can add additional features to an existing class without modifying it.
+
+Polymorphism: polymorphism means ability to take more than one form. An operation may exhibit different behaviors in different instances. The behavior depends upon the types of data used in the operation.
+C++ supports operator overloading and function overloading.
+
+Members of a class are private by default and members of struct are public by default.
+A class declaration can contain static object of self type, it can also have pointer to self type, but it cannot have a non-static object of self type.
+A static member function cannot be virtual 
+static member function cannot be const and volatile
+pure virtual function virtual float area() = 0; is defined inside class Shape, so this class is an abstract class and you cannot create object of class Shape
+A constructor is a member function of a class which initializes objects of a class. 
+We can have more than one constructor in a class, as long as each has a different list of arguments.
+A copy constructor is a member function which initializes an object using another object of the same class.
+Destructor is a member function which destructs or deletes an object.
+There can only one destructor in a class with classname preceded by ~, no parameters and no return type.
+Following are the things which a derived class inherits from its parent.
+1) Every data member defined in the parent class (although such members may not always be
+accessible in the derived class!)
+2) Every ordinary member function of the parent class (although such members may not always be
+accessible in the derived class!)
+3) The same initial data layout as the base class.
+
+Following are the things which a derived class doesn’t inherits from its parent :
+1) The base class’s constructors and destructor.
+2) The base class’s friends
+
+Friend Class A friend class can access private and protected members of other class in which it is declared as friend. It is sometimes useful to allow a particular class to access private members of other class
+Friend Function Like friend class, a friend function can be given special grant to access private and protected members. 
+In C++, virtual functions can be private and can be overridden by the derived class. 
+
+There is a special catch block called ‘catch all’ catch(…) that can be used to catch all types of exceptions.
+If an exception is thrown and not caught anywhere, the program terminates abnormally. 
+A derived class exception should be caught before a base class exception.
+When an exception is thrown, all objects created inside the enclosing try block are destructed before the control is 	transferred to catch block.
+

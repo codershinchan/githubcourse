@@ -1,0 +1,4 @@
+Simple Sieve of Erasthothenes basically works on the factor that you cancel out all the multiples from 1 to some particular range 
+Since the complexity of the algorithm is O(n log n loglogn ).Space complexity of it is O(n(upper limit)).
+In segmented sieve of erasthothenes we perform the same method as seive of erasthothenes but we pass a segment in which it is done hence space complexity reduces in segmented sieve.
+	

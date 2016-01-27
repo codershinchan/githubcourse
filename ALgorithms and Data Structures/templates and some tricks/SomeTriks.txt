@@ -1,0 +1,4 @@
+scanf and printf is faster than cin and cout
+n >>=1 is much faster than n /= 2
+while(scanf("%d",&i)!=EOF) is the best way to take input till the end of the file.
+whenever floating point exception come look for correct use of mod or dividing some thing by something that does not exist or out of bound

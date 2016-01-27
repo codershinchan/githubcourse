@@ -1,0 +1,28 @@
+• Parameter Passing — All parameters in C are passed by call-by-value, meaning
+					  that copies of all arguments are made on function calls. This would seem to suggest
+					  that it is impossible to write functions that have side effects. Instead, C encourages
+					  you to pass a pointer to any argument that you intend to modify within the body
+					  of the function.Our only use of pointers will be in parameter passing. The pointer to x is
+					  denoted by &x, while the item pointed to by p is denoted *p. Do not get confused
+					  between multiplication and pointer dereferencing!
+
+• Data Types — C supports several basic data types, including int, float, and
+			   char, which should all be self-explanatory. Higher precision ints and floats are
+			   denoted long and double, respectively. All functions return a value of type int
+			   if not otherwise specified.
+
+• Arrays — C array indices always range from 0 to n − 1, where n is the number
+		   of elements in the array. Thus if we want to start with a first index of 1 for
+		   convenience, we had better remember to allocate room for n + 1 elements in the
+		   array. No runtime checking is performed on the validity of array bounds, so such
+		   errors are a common cause of program crashes.
+		   We are not always consistent as to where the first element of each array is
+		   located. Starting from 0 is the traditional C style. However, it is sometimes clearer
+		   or easier to start at 1, and we are willing to pay one extra memory location for
+		   the privilege. Try not to be confused when reading our code.
+
+
+• Operators — C contains a few essential operators which may be mysterious to
+			  some readers. The integer remainder or mod operation is denoted %. The logical-
+			  and and logical-or operations which appear in conditional statements are denoted
+			  && and ||, respectively.
